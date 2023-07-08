@@ -1,0 +1,63 @@
+
+.a-negro{
+    color: black
+}
+ #fondo{
+    background-color: rgb(245, 238, 207);
+}
+
+#tamaño-letra{
+    font-size: 25pt;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.fondo-seccion{
+    background-color: rgb(191, 237, 237);
+}
+
+.t-letra{
+    font-family:Cambria, Cochin,serif;
+}
+
+.c-letra{
+    color: rgb(255, 255, 255);
+}
+
+.sn-subrayado{
+    text-decoration: none;
+}
+
+.flex-box-primeravez{
+    display:flex;
+    border: 2px solid green;
+    justify-content:end;
+}
+.bordemain{
+    width: 500px;
+    border: 2px solid blue;
+}
+
+.bordeaside{
+    width: 500px;
+    border: 2px solid red;
+}
+
+.tamañoencabezado{
+  width: 100%;
+  height: 300px;
+  max-width: 100%
+}
+
+.tamañomenu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    height: 100px;
+    max-width: 100%
+    
+
+}
