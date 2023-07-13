@@ -69,7 +69,7 @@
 }
 
 #fondo-header{
-    background-color: rgb(246, 195, 195);
+    background-color: rgb(0, 0, 0);
 }
 
 .tamañomenu{
@@ -81,7 +81,7 @@
     max-width: 100%
 }
 .color-nav{
-    color:aquamarine;
+    color:rgb(248, 248, 248);
 }
 
 
@@ -90,3 +90,7 @@
     color: rgb(191, 237, 237);
 }
 
+.flex-galeria{
+    display: flex;
+    justify-content: end;
+}
