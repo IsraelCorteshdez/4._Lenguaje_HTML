@@ -3,3 +3,251 @@ Modelo de layout
 -css-grid
 
 Flex-box: 
+
+
+----------------------------------------------------------------------------
+pagina para acomodar las cajas
+
+https://www.dariobf.com/centrar-verticalmente-con-css-6-formas-diferentes-de-lograrlo/
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------
+
+
+
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos
+$ git config --global user.name "IsraelCortesHdez"
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos
+$ git config --global user.mail "israelcorteshdez@gmail.com"
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos
+$ status
+bash: status: command not found
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos
+$ git init
+Initialized empty Git repository in C:/Users/PILARES/Downloads/HtmlyEstilos/.git/
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ ^C
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$
+$ git add -A
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git commit -m "Estrutura esqueleto HTML sin estilos"
+[master (root-commit) a1874d4] Estrutura esqueleto HTML sin estilos
+ 2 files changed, 38 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git remote add origin https://github.com/IsraelCorteshdez/HtmlyEstilos.git
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git push --set-upstream origin master
+remote: Permission to IsraelCorteshdez/HtmlyEstilos.git denied to 34mango.
+fatal: unable to access 'https://github.com/IsraelCorteshdez/HtmlyEstilos.git/': The requested URL returned error: 403
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$
+ *  History restored 
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$
+
+
+
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git add -A
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        new file:   notas.txt
+        modified:   style.css
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git commit -m "estilos separado del documento html"
+[master 3e4a7bd] estilos separado del documento html
+ 3 files changed, 81 insertions(+), 11 deletions(-)
+ create mode 100644 notas.txt
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git log
+commit 3e4a7bd7ad91ae5b09175b90aa2711f5056b779e (HEAD -> master)
+Author: IsraelCortesHdez <scott1912c@gmail.com>
+Date:   Sat Jul 8 14:44:01 2023 -0600
+
+    estilos separado del documento html
+
+commit a1874d4a5e7031c7bf08bbb0ad35903dd965dd76
+Author: IsraelCortesHdez <scott1912c@gmail.com>
+Date:   Sat Jul 8 12:57:31 2023 -0600
+
+    Estrutura esqueleto HTML sin estilos
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git remote -v
+origin  https://github.com/IsraelCorteshdez/HtmlyEstilos.git (fetch)
+origin  https://github.com/IsraelCorteshdez/HtmlyEstilos.git (push)
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git branch main
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (master)
+$ git branch -M main
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$ git push -u origin
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$ git push --set-upstream origin main
+remote: Permission to IsraelCorteshdez/HtmlyEstilos.git denied to 34mango.
+fatal: unable to access 'https://github.com/IsraelCorteshdez/HtmlyEstilos.git/': The requested URL returned error: 403
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/PILARES/AppData/Local/Programs/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=IsraelCortesHdez
+user.email=scott1912c@gmail.com
+user.mail=israelcorteshdez@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/IsraelCorteshdez/HtmlyEstilos.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$ git config --global user.email "israelcorteshdez@gmail.com"
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$ ^C
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$ git push --set-upstream origin main
+remote: Permission to IsraelCorteshdez/HtmlyEstilos.git denied to 34mango.
+fatal: unable to access 'https://github.com/IsraelCorteshdez/HtmlyEstilos.git/': The requested URL returned error: 403
+
+PILARES@DESKTOP-0Q8MQDH MINGW64 ~/Downloads/HtmlyEstilos (main)
+$

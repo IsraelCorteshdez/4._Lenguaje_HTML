@@ -2,6 +2,7 @@
 .a-negro{
     color: black
 }
+
  #fondo{
     background-color: rgb(245, 238, 207);
 }
@@ -35,7 +36,9 @@
     border: 2px solid green;
     justify-content:end;
 }
+
 .bordemain{
+    flex-grow: 1;
     width: 500px;
     border: 2px solid blue;
 }
@@ -45,10 +48,28 @@
     border: 2px solid red;
 }
 
-.tamañoencabezado{
+.flex-articulos{
+    display: flex;
+    justify-content: center;
+}
+
+.tamañoheader{
   width: 100%;
   height: 300px;
   max-width: 100%
+ }
+
+ .color-header{
+  color: white;
+}
+
+ .tamañoencabezado{
+    width: 100%;
+    height: 100px;
+}
+
+#fondo-header{
+    background-color: rgb(246, 195, 195);
 }
 
 .tamañomenu{
@@ -58,6 +79,14 @@
     border: 2px solid rgb(255, 255, 255);
     height: 100px;
     max-width: 100%
-    
-
 }
+.color-nav{
+    color:aquamarine;
+}
+
+
+.alineadohijo{
+    line-height: 100px;
+    color: rgb(191, 237, 237);
+}
+
